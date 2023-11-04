@@ -1,0 +1,61 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    /* We will define the size and other properties later */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 20px);
+    grid-template-rows: repeat(10, 20px);
+    gap: 1px;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+/* ... previous styles ... */
+
+.pacman {
+    width: 20px;
+    height: 20px;
+    background-color: #FFFF00; /* Pac-Man's color */
+    border-radius: 50%; /* Makes the square a circle */
+    /* We'll adjust positioning once we have more of the game logic in place */
+}
+
+.wall {
+    background-image: url('images/wall.jpeg');
+    background-size: cover;
+}
+
+.pellet {
+background-color: white;
+border-radius: 50%;
+width: 5px;
+height: 5px;
+margin: auto; /* This centers the pellet in the cell */
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+  
